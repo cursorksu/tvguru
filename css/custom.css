@@ -1,0 +1,490 @@
+/* Радиокнопки вместо табов для новостей на главной */
+.block-front-radio-news{
+    display: inline-block;
+}
+.block-front-radio-news input[type=radio]{
+    display: none;
+}
+.block-front-radio-news input[type=radio] + label{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    vertical-align: top;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background: 0 0;
+    -webkit-transition: all .1s ease 0s;
+    transition: all .1s ease 0s;
+    border-radius: 0;
+    border: 1px solid #dadada;
+    -webkit-box-shadow: inset 0 9px 14px rgba(0,0,0,.1);
+    box-shadow: inset 0 9px 14px rgba(0,0,0,.1);
+    color: rgba(76,76,76,.7);
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-transition: all .1s ease 0s;
+    transition: all .1s ease 0s;
+    height: 44px;
+    padding: 0 32px;
+    position: relative;
+}
+.block-front-radio-news input[type=radio] + label:hover span, .block-front-radio-news input[type=radio]:checked + label span{
+    color: #247cd0;
+}
+.block-front-radio-news input[type=radio] + label span{
+    vertical-align: middle;
+    display: inline-block;
+    color: rgba(76,76,76,.7);
+    font-size: 16px;
+    line-height: 42px;
+    -webkit-transition: all .1s ease 0s;
+    transition: all .1s ease 0s;
+}
+.block-front-radio-news input[type=radio]:checked + label{
+    cursor:  default;
+    box-shadow: none;
+}
+.block-front-radio-news input[type=radio]:checked + label:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 2px solid #247cd0;
+}
+@media only screen and (max-width: 767px){
+    .block-front-radio-news{
+        display: block;
+    }
+    .block-front-radio-news input[type=radio] + label{
+        padding: 0 10px;
+        width: 50%;
+    }
+}
+/* end:Радиокнопки вместо табов для новостей на главной */
+/* Кнопка еще в новостях на глваной */
+.btn.activated{
+    background: #0083da;
+    cursor: default;
+}
+.btn.icon-right.activated .help{
+    color: #fff;
+    padding-right: 0;
+}
+.btn.icon-right.disabled, .btn.icon-right.disabled.activated, .btn.icon-right.disabled:hover, .btn.icon-right.disabled.activated:hover{
+    background: 0 0;
+    border-color: #dadada;
+    cursor: default;
+}
+.btn.icon-right.disabled .help, .btn.icon-right.disabled.activated .help,
+.btn.icon-right.disabled:hover .help, .btn.icon-right.disabled.activated:hover .help,
+.btn.icon-right.disabled:focus .help, .btn.icon-right.disabled.activated:focus .help,
+.btn.icon-right.disabled:active .help, .btn.icon-right.disabled.activated:active .help{
+    color: rgba(76,76,76,.7) !important;
+    padding-right: 0;
+}
+/* end: Кнопка еще в новостях на глваной */
+/* Radio переключатель новые/популярные в категории сериалы вместо списка...  */
+.block-filter-sort{
+    font-size: 0;
+}
+.block-filter-sort input[type=radio]{
+    display: none;
+}
+.block-filter-sort input[type=radio] + label{
+    vertical-align: top;
+    margin-right: -1px;
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    padding: 0 32px;
+    text-align: center;
+    -webkit-transition: all .1s ease 0s;
+    transition: all .1s ease 0s;
+    border-radius: 0;
+    border: 1px solid #dadada;
+    -webkit-box-shadow: inset 0 9px 14px rgba(0,0,0,.1);
+    box-shadow: inset 0 9px 14px rgba(0,0,0,.1);
+    color: rgba(76,76,76,.7);
+}
+.block-filter-sort input[type=radio] + label:hover, .block-filter-sort input[type=radio]:checked + label{
+    color: #247cd0;
+}
+.block-filter-sort input[type=radio] + label span{
+    display: inline-block;
+    line-height: 38px;
+}
+.block-filter-sort input[type=radio]:checked + label{
+    cursor:  default;
+    box-shadow: none;
+}
+.block-filter-sort input[type=radio]:checked + label:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 2px solid #247cd0;
+}
+@media only screen and (max-width: 1025px){
+    .block-filter-sort input[type=radio] + label{
+        padding: 0 24px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .block-filter-sort input[type=radio] + label{
+        width: 50%;
+        padding: 0 10px;
+    }
+}
+/* end: Radio переключатель новые/популярные в категории сериалы вместо списка...  */
+/* Вставка select и radio фильтров в форму сериалов */
+.block-search .btn {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+.block-search .btn .icon-search {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 17px;
+}
+.block-search .btn:hover .icon-search {
+    color: #fff;
+}
+.block-search input[type=search]{
+    border: 1px solid #dadada;
+    background: #fff;
+    outline: 0;
+    color: rgba(1,1,1,.8);
+    font-family: "PT Sans",sans-serif;
+    font-weight: 400;
+    text-align: left;
+    width: 100%;
+    -webkit-transition: all .1s linear 0s;
+    transition: all .1s linear 0s;
+    border-radius: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    font-size: 13px;
+    padding: 0 18px;
+    padding-left: 67px;
+}
+/* end: Вставка select и radio фильтров в форму сериалов */
+/* notification */
+.notification-line{
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    z-index: 1100;
+}
+.notification-line .notification-item{
+    width: 140px;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    display: none;
+}
+/* end: notification*/
+/* Правка комментариев*/
+.block-comments > div > div > .comm_level{
+    overflow: hidden;
+}
+.block-comments > div >  div > .commsone .tree-wrap .comm_level_line{
+    display: none;
+}
+.normalize-modals{
+    display: block;
+    opacity: 1;
+}
+.normalize-modals .modal-dialog{
+    opacity: 1 !important;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+    opacity: 0
+}
+/* end:Правка комментариев */
+
+.small-news-item .field-category.green span {
+    background: #47bd62;
+}
+.small-news-item .field-category.red span {
+    background: #f43858;
+}
+.serial-status.status-5 {
+    background: #f7c852;
+}
+.serial-status.status-3 {
+    background: #bd260d;
+}
+.serial-status.status-2 {
+    background: #47bd62;
+}
+.article-news .article-header .field-category a.red {
+    background: #f43858;
+}
+.item-article-cart.review .article-top .article-category {
+    background: #f43858;
+}
+/* Слайдер аттачей */
+.comments-slider-wrapper{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.92);
+}
+.comments-slider-wrapper .slider-wrap{
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    top: 50px;
+    bottom: 50px;
+}
+.comments-slider-wrapper .slider-wrap .slider-box{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.comments-slider-wrapper .slider-wrap .slider-box img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.comments-slider-wrapper .close-slider{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: none !important;
+    outline: none !important;
+    cursor: pointer;
+    border: none !important;
+    padding: 0;
+    opacity: 0.7;
+    transition: 0.5s;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+}
+.comments-slider-wrapper .close-slider:hover, .comments-slider-wrapper .next-slide:hover, .comments-slider-wrapper .prev-slide:hover{
+    opacity: 1;
+}
+.comments-slider-wrapper .close-slider:after, .comments-slider-wrapper .close-slider:before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 34px;
+    left: 2px;
+    top: 13px;
+    background: #fff;
+    left: 4px;
+    left: 3px;
+    top: 17px;
+}
+.comments-slider-wrapper .close-slider:after{
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.comments-slider-wrapper .close-slider:before{
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.comments-slider-wrapper .next-slide, .comments-slider-wrapper .prev-slide{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 40px;
+    height: 40px;
+    background: none !important;
+    outline: none !important;
+    cursor: pointer;
+    border: none !important;
+    padding: 0;
+    opacity: 0.7;
+    transition: 0.5s;
+    z-index: 2;
+}
+.comments-slider-wrapper .next-slide{
+    right: 0;
+}
+.comments-slider-wrapper .prev-slide{
+    left: 0;
+}
+.comments-slider-wrapper .prev-slide:after, .comments-slider-wrapper .next-slide:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 26px 20px 0;
+    border-color: transparent #ffffff transparent transparent;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 15px;
+}
+.comments-slider-wrapper .next-slide:after{
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    left: 0px;
+}
+.comments-slider-wrapper  .count-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align:center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+}
+.comattach{
+    overflow: hidden;
+}
+.comattach .preview-add-com{
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#dle-comments-list > div > div > .commsone > .tree-wrap .comm_level_line .comm_level_dot{
+    display: none;
+}
+.comments-slider-wrapper  iframe{
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+    opacity: 0
+}
+/* end: Слайдер аттачей */
+.item-review .review-body p { word-break: break-word; }
+.item-review .review-body p a { color: rgba(0,0,0,.8); text-decoration: none; font-size: 16px; font-weight: 400; line-height: 22px; }
+/*.item-review.review-focused { background: #8dffab !important; }*/
+/* Загрузка фото профиля */
+.page-cabinet .cabinet-header .header-top .user-photo .load-photo.active{
+    visibility: visible;
+    opacity: 1;
+}
+/* end: Загрузка фото профиля */
+.social-links .social li a span { display: inline-block !important; }
+.block-share-friends .share-list li a span { display: inline-block !important; }
+.block-ajax-results { max-height: -webkit-calc(100vh - 64px); max-height: calc(100vh - 64px); height: auto; padding: 0; }
+.block-ajax-results.open { height: calc(100vh - 64px); }
+.block-comments .commsone {
+    transition: 1s;
+}
+.block-comments .commsone.focused-comment{
+    background: #ebfaef;
+}
+.block-comments .commsone.focused-comment:after {
+    border-width: 9px 8px 9px 0;
+    border-color: transparent #ebfaef transparent transparent;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: -7px;
+}
+.item-article-all {
+    height: 302px;
+    background: #ffffff;
+    position: relative;
+}
+.item-article-all a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 30px;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+.article-news .body p iframe {
+    width: 100%;
+    height: 500px;
+}
+@media (max-width: 768px) {
+    .article-news .body p iframe {
+        height: 300px;
+    }
+}
+.breadcrumbs>* a { margin-bottom: 0; }
+
+header .l-header .l-header-content .block-ajax-search .ajax-search-container.focused .ajax-inp::-webkit-input-placeholder { color: rgba(255,255,255,.7); font-style: italic; }
+header .l-header .l-header-content .block-ajax-search .ajax-search-container.focused .ajax-inp::-moz-placeholder { color: rgba(255,255,255,.7); font-style: italic; }
+header .l-header .l-header-content .block-ajax-search .ajax-search-container.focused .ajax-inp:-moz-placeholder { color: rgba(255,255,255,.7); font-style: italic; }
+header .l-header .l-header-content .block-ajax-search .ajax-search-container.focused .ajax-inp:-ms-input-placeholder { color: rgba(255,255,255,.7); font-style: italic; }
+#searchsuggestionscust .ajaxalert {
+    text-align: center;
+    width: 100%;
+    background: #1599e0;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 74px;
+    text-transform: uppercase;
+}
+.block-front-preview .block-header .block-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+.block-comments .comment .comment-text a {
+    color: rgba(0,0,0,.8);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+#serial-review-form.has-error .error-message {
+    display: block;
+    pointer-events: all;
+}

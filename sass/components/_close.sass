@@ -1,0 +1,35 @@
+$color-close: #ffffff
+$space: 17px
+.c-close
+  padding-left: $space
+  padding-right: $space
+  height: 46px
+  position: relative
+  vertical-align: middle
+  width: 61px
+  &:before
+    transform: translateX(-50%) rotate(45deg)
+  &:after
+    transform: translateX(-50%) rotate(-45deg)
+  &:before,
+  &:after
+    content: ''
+    width: 25px
+    height: 1.5px
+    display: inline-block
+    position: absolute
+    top: 50%
+    left: 50%
+    background-color: $color-close
+    
++MQ(1280px)
+  .c-close
+    cursor: pointer
+    &:before,
+    &:after
+      width: 33px
+      +transition
+    &:hover
+      &:before,
+      &:after
+        background-color: darken($color-close, 10%)

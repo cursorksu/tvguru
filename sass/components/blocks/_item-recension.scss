@@ -1,0 +1,135 @@
+.item-recension {
+  width: 100%;
+  background: $blue;
+  transition: all 0.1s ease 0s;
+  display: block;
+  text-decoration: none;
+  &:hover {
+    box-shadow: 0 0 20px rgba(2, 2, 2, 0.53);
+    @media (pointer:coarse) {
+      box-shadow: none;
+    }
+    @media #{$small-only} {
+      box-shadow: none;
+    }
+  }
+  .recension-header {
+    position: relative;
+    .field-img {
+      display: block;
+      width: 100%;
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+    .field-rating {
+      display: block;
+      position: absolute;
+      top: 18px;
+      right: -7px;
+      min-width: 46px;
+      height: 37px;
+      background: $blue;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 37px;
+      text-align: center;
+      padding: 0 5px;
+      z-index: 2;
+    }
+  }
+  .recension-body {
+    position: relative;
+    padding: 23px 15px 40px;
+    .top {
+      min-height: 78px;
+      padding: 0 0 8px;
+      .title {
+        text-align: center;
+        span {
+          display: inline-block;
+          vertical-align: top;
+          color: #fffefe;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.2;
+          text-decoration: none;
+        }
+      }
+      .recension-category {
+        text-align: center;
+        color: rgba(#fffefe,0.7);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+      }
+    }
+    .field-description {
+      position: relative;
+      text-align: center;
+      .description {
+        color: #fefefe;
+        font-size: 16px;
+        font-style: italic;
+        line-height: 20px;
+        height: 100px;
+        overflow: hidden;
+        &:after {
+          content: $icon-quotes;
+          @extend .icomoon;
+          font-size: 46px;
+          color: rgba(#fff,0.2);
+          display: block;
+          position: absolute;
+          left: 0;
+          top: -8px;
+          pointer-events: none;
+        }
+      }
+    }
+
+    .recension-footer {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 12px 10px;
+      text-align: center;
+      font-size: 0;
+      > div {
+        display: inline-block;
+        vertical-align: middle;
+        color: rgba(#fff,0.5);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        padding: 0 10px;
+        white-space: nowrap;
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+      .field-author {
+        position: relative;
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          @include center(y);
+          right: -2px;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: rgba(#fff,0.5);
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,273 @@
+/* Ion.RangeSlider
+// css version 2.0.3
+// © 2013-2014 Denis Ineshin | IonDen.com
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// RangeSlider */
+
+.irs {
+  position: relative; display: block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.irs-line {
+  position: relative; display: block;
+  overflow: hidden;
+  outline: none !important;
+}
+.irs-line-left, .irs-line-mid, .irs-line-right {
+  position: absolute; display: block;
+  top: 0;
+}
+.irs-line-left {
+  left: 0; width: 11%;
+}
+.irs-line-mid {
+  left: 9%; width: 82%;
+}
+.irs-line-right {
+  right: 0; width: 11%;
+}
+
+.irs-bar {
+  position: absolute; display: block;
+  left: 0; width: 0;
+}
+.irs-bar-edge {
+  position: absolute; display: block;
+  top: 0; left: 0;
+}
+
+.irs-shadow {
+  position: absolute; display: none;
+  left: 0; width: 0;
+}
+
+.irs-slider {
+  position: absolute;
+  display: block;
+  cursor: default;
+  z-index: 1;
+}
+.irs-slider.single {
+
+}
+.irs-slider.from {
+
+}
+.irs-slider.to {
+
+}
+.irs-slider.type_last {
+  z-index: 2;
+}
+
+.irs-min {
+  position: absolute; display: block;
+  left: 0;
+  cursor: default;
+}
+.irs-max {
+  position: absolute; display: block;
+  right: 0;
+  cursor: default;
+}
+
+.irs-from, .irs-to, .irs-single {
+  position: absolute; display: block;
+  top: 0; left: 0;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.irs-grid {
+  position: absolute; display: none;
+  bottom: 0; left: 0;
+  width: 100%; height: 20px;
+}
+.irs-with-grid .irs-grid {
+  display: block;
+}
+.irs-grid-pol {
+  position: absolute;
+  top: 0; left: 0;
+  width: 1px; height: 8px;
+  background: #000;
+}
+.irs-grid-pol.small {
+  height: 4px;
+}
+.irs-grid-text {
+  position: absolute;
+  bottom: 0; left: 0;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 9px; line-height: 9px;
+  padding: 0 3px;
+  color: #000;
+}
+
+.irs-disable-mask {
+  position: absolute; display: block;
+  top: 0; left: -1%;
+  width: 102%; height: 100%;
+  cursor: default;
+  background: rgba(0,0,0,0.0);
+  z-index: 2;
+}
+.lt-ie9 .irs-disable-mask {
+  background: #000;
+  filter: alpha(opacity=0);
+  cursor: not-allowed;
+}
+
+.irs-disabled {
+  opacity: 0.4;
+}
+
+
+.irs-hidden-input {
+  position: absolute !important;
+  display: block !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden;
+  outline: none !important;
+  z-index: -9999 !important;
+  background: none !important;
+  border-style: solid !important;
+  border-color: transparent !important;
+}
+
+
+.irs {
+  height: 50px;
+}
+.irs-with-grid {
+  height: 70px;
+}
+.irs-line {
+  height: 5px;
+  top: 36px;
+  background: #9ba9ad;
+  border: none;
+}
+.irs-line-left {
+  height: 5px;
+}
+.irs-line-mid {
+  height: 5px;
+}
+.irs-line-right {
+  height: 5px;
+}
+
+.irs-bar {
+  height: 5px;
+  top: 36px;
+  background: transparent;
+}
+.irs-bar-edge {
+  height: 5px;
+  top: 36px;
+  width: 14px;
+  background: #9ba9ad;
+  border: none;
+}
+
+.irs-shadow {
+  height: 2px;
+  top: 38px;
+  background: #000;
+  opacity: 0.3;
+}
+.lt-ie9 .irs-shadow {
+  filter: alpha(opacity=30);
+}
+
+.irs-slider {
+  top: 25px;
+  width: 16px;
+  height: 24px;
+  border: none;
+  background: $green-light;
+  @include box-shadow(2px 2px 0 rgba($grey,0.5));
+  cursor: pointer;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 5px 8px;
+    border-color: transparent transparent $green-light transparent;
+  }
+}
+
+.irs-slider.state_hover, .irs-slider:hover {
+
+}
+
+.irs-min, .irs-max {
+  color: #9ba9ad;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  text-shadow: none;
+  top: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.lt-ie9 .irs-min, .lt-ie9 .irs-max {
+  background: transparent;
+}
+
+.irs-from, .irs-to, .irs-single {
+  color: #9ba9ad;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  text-shadow: none;
+  background: transparent;
+}
+.irs-single {
+  font-weight: 700;
+  top: -1px;
+}
+.lt-ie9 .irs-from, .lt-ie9 .irs-to, .lt-ie9 .irs-single {
+  background: transparent;
+}
+
+.irs-grid {
+  height: 27px;
+}
+.irs-grid-pol {
+  opacity: 0.5;
+  background: #428bca;
+}
+.irs-grid-pol.small {
+  background: #999;
+}
+
+.irs-grid-text {
+  bottom: 5px;
+  color: #99a4ac;
+}
+
+.irs-disabled {
+}

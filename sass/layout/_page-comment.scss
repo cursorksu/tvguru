@@ -1,0 +1,254 @@
+.page-comment {
+  .layout-right-aside {
+    > .content {
+      padding: 0 0 0;
+      background: #fff;
+    }
+    .aside-right {
+      padding: 0 0 0;
+      @media #{$medium-mobile} {
+        display: block!important;
+        border-top: none;
+      }
+      @media #{$small-only} {
+
+      }
+      .serial-status {
+        @media #{$medium-mobile} {
+          display: none;
+        }
+      }
+      .block-sticky-aside {
+        &.is_stuck {
+          //top: 54px!important;
+          @media #{$medium-mobile} {
+            position: relative!important;
+            top: auto!important;
+            width: 100%!important;
+          }
+        }
+        .block-promo {
+          margin: 0 0 0 -1px;
+          a {
+            display: block;
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .page-header {
+    padding: 21px 57px 21px 30px;
+    @media #{$medium-mobile} {
+      padding: 21px 10px 21px 10px;
+    }
+    .page-title {
+      @media #{$small-only} {
+        line-height: 1.1;
+        margin-bottom: 16px;
+      }
+      a {
+        color: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        text-decoration: none;
+        transition: all 0.1s ease 0s;
+        &:hover {
+          color: $blue;
+        }
+      }
+      .current-rating {
+        color: $blue;
+        font-size: 30px;
+        @media #{$medium-mobile} {
+          font-size: 24px;
+        }
+      }
+    }
+    .serial-box-ratings {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 0;
+      width: 100%;
+      padding: 0 0 9px 0;
+      @media #{$small-only} {
+        padding: 0;
+      }
+      .box-rating {
+        display: block;
+        float: left;
+        padding: 4px 22px 4px 0;
+        margin: 0 20px 0 0;
+        border-right: 1px solid #e6e6e6;
+        white-space: nowrap;
+        @media #{$small-only} {
+          border-right: 0;
+          margin: 0 0;
+        }
+        .item-rating {
+          color: rgba(#424242,0.9);
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 1;
+          position: relative;
+          margin-right: 14px;
+
+          &.imdb {
+            margin-right: 0;
+          }
+          &.kinopoisk {
+            padding: 0 0 0 18px;
+            &:before {
+              content: $icon-kinopoisk;
+              @extend .icomoon;
+              font-size: 14px;
+              color: $blue;
+              display: block;
+              position: absolute;
+              @include center(y);
+              left: 0;
+            }
+          }
+          &.imdb {
+            padding: 0 0 0 34px;
+            &:before {
+              content: $icon-imdb;
+              @extend .icomoon;
+              font-size: 12px;
+              color: $blue;
+              display: block;
+              position: absolute;
+              @include center(y);
+              left: 0;
+            }
+          }
+        }
+      }
+      .box-tvguru-rating {
+        display: block;
+        float: left;
+        white-space: nowrap;
+        @media #{$small-only} {
+            margin: 10px 0 0;
+            clear: both;
+        }
+        .serial-item-rating {
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 9px;
+        }
+        .current-rating {
+          display: inline-block;
+          vertical-align: top;
+          color: $blue;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          margin-right: 11px;
+        }
+        .rating-label {
+          display: inline-block;
+          vertical-align: top;
+          color: rgba(#000,0.5);
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          @media #{$small-only} {
+            display: block;
+            line-height: 18px;
+          }
+          a {
+            font-size: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+            text-decoration: none;
+            color: $blue;
+            border-bottom: 1px solid rgba($blue,0.5);
+            transition: all 0.1s ease 0s;
+            &:hover {
+              border-bottom-color: transparent;
+            }
+          }
+        }
+      }
+      .tooltip {
+        .tooltip-inner {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  .page-content {
+    padding: 7px 57px 52px 30px;
+    @media #{$medium-mobile} {
+      padding: 7px 10px 22px 10px;
+    }
+    @media #{$small-only} {
+      padding: 10px 10px 22px 10px;
+    }
+  }
+
+  .block-small-news {
+    padding: 30px 30px 30px 20px;
+    @media #{$medium-mobile} {
+      padding: 0 10px 50px 10px;
+    }
+    .block-title {
+      margin-bottom: 11px;
+      @media #{$medium-mobile} {
+        margin-bottom: 24px!important;
+      }
+    }
+    .block-content {
+      margin-bottom: 34px;
+    }
+    .box-btn {
+      .btn {
+        width: 100%;
+      }
+    }
+    .small-news-item {
+      min-height: 108px;
+      @media only screen and (max-width: 1300px) {
+        min-height: 80px;
+      }
+      .field-img {
+        width: 108px;
+        @media only screen and (max-width: 1300px) {
+          width: 80px;
+        }
+      }
+      .field-title {
+        span {
+          @media #{$medium-mobile} {
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
+  .block-promo {
+    padding: 32px 0;
+    a {
+      display: block;
+      width: 100%;
+    }
+  }
+  .btn-load-more {
+    text-align: center;
+    .btn {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .box-pagination {
+    padding: 28px 0;
+  }
+}

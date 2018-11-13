@@ -1,0 +1,21 @@
+.block-front-top {
+  .box-front-slider {
+    display: block;
+    float: left;
+    width: 75%;
+    @media #{$medium-mobile} {
+      width: 100%;
+    }
+  }
+  .box-popular-news {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 31px 34px 0 20px;
+    min-height: 428px;
+    border-left: 1px solid #e6e5e5;
+    @media #{$large-mobile} {
+      padding: 31px 20px 0 20px;
+    }
+  }
+}

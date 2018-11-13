@@ -1,0 +1,107 @@
+.item-notice {
+  position: relative;
+  padding: 0 0 0 50px;
+  .field-img {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 34px;
+    a {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .notice-top {
+    font-size: 0;
+    .field-user-name {
+      display: inline-block;
+      margin-right: 10px;
+      @media #{$small-only} {
+        width: 100%;
+        margin: 0 0;
+      }
+      a {
+        display: inline-block;
+        color: #5a5a5a;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-decoration: none;
+        transition: all 0.1s ease 0s;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+    .field-status {
+      display: inline-block;
+      color: rgba(#000,0.5);
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.2;
+      @media #{$small-only} {
+        width: 100%;
+        margin-bottom: 6px;
+      }
+    }
+  }
+  .field-link {
+    font-size: 0;
+    margin-bottom: 18px;
+    @media #{$small-only} {
+      margin-bottom: 15px;
+    }
+    a {
+      display: inline-block;
+      vertical-align: top;
+      color: #0083da;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      text-decoration: none;
+      &:hover {
+        span {
+          background-image: linear-gradient(to right, rgba($blue,0) 75%, rgba($blue,0) 75%);
+        }
+      }
+      span {
+        line-height: 20px;
+        background-position: 0 15px;
+        background-repeat: repeat-x;
+        background-size: 1px 1px;
+        background-image: linear-gradient(to right, rgba($blue,0.5) 75%, rgba($blue,0.5) 75%);
+      }
+    }
+  }
+  .message {
+    margin-bottom: 15px;
+    > * {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    p {
+      color: black;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      margin-bottom: 10px;
+      @media #{$small-only} {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  .field-date {
+    color: rgba(#000,0.5);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.2;
+    .date {
+      margin-right: 10px;
+    }
+  }
+}

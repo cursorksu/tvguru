@@ -1,0 +1,21 @@
+.block-last-news {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  //padding: 20px 0 0;
+  &.is_stuck {
+    //margin-bottom: 20px;
+    //margin-top: 20px;
+    //top: 74px!important;
+  }
+  .block-small-news {
+    .small-news-item {
+      .field-img {
+        width: 105px;
+        @media only screen and (max-width: 1300px) {
+          width: 80px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.s-article
+  p
+    color: #333
+    font-weight: 400
+    font-size: 17px
+    line-height: 1.4
+    margin-bottom: 0
+    + p
+      margin-top: 15px
+  a
+    text-decoration: none
+    font-size: inherit
+    line-height: inherit
+    font-weight: inherit
+    display: inline
+    color: #0083da
+    background-image: linear-gradient(rgba(#0083da, .5), rgba(#0083da, .5))
+    background-size: 1px 1px
+    background-position: 100% 100%
+    background-repeat: repeat-x
+
+  h1
+    line-height: 1
+    margin-bottom: 20px
+  h2,
+  h3,
+  h4,
+  h5,
+  h6
+    line-height: 1.2
+    font-size: 1.375rem
+    margin-bottom: 18px
+    margin-top: 23px
+
++MQ(1026px)
+  .s-article
+    p
+      font-size: 16px
+      margin-bottom: 0
+      line-height: 1.5
+      + p
+        margin-top: 15px
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+      font-size: 24px
+      margin-top: 27px
+      margin-bottom: 15px
+
++MQ(1280px)
+  .s-article
+    a
+      &:hover
+        background-size: 0
+
++MQ(1440px)
+  .s-article
+    p
+      line-height: 1.63
+      // + p
+      //   margin-top: 18px
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+      margin-top: 35px
+      margin-bottom: 20px
+
+.s-link
+  a
+    text-decoration: none !important
+    font-size: inherit
+    line-height: inherit
+    font-weight: inherit
+    display: inline
+    color: #0083da
+    background-image: linear-gradient(rgba(#0083da, .5), rgba(#0083da, .5))
+    background-size: 1px 1px
+    background-position: 100% 100%
+    background-repeat: repeat-x
+
++MQ(1280px)
+  .s-link
+    a
+      &:hover
+        background-size: 0

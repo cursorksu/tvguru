@@ -1,0 +1,209 @@
+.item-serial-cart {
+  &:hover {
+    .serial-cart-top {
+      .field-img {
+        box-shadow: 0 0 26px rgba(0, 0, 0, 0.33);
+      }
+      .box-rating {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    .serial-cart-info {
+      a {
+        .serial-title {
+          span {
+            color: $blue;
+            background-image: linear-gradient(to right, rgba($blue,0.5) 75%, rgba($blue,0.5) 75%);
+          }
+        }
+      }
+    }
+  }
+  .serial-cart-top {
+    display: block;
+    width: 100%;
+    position: relative;
+    .field-img {
+      width: 100%;
+      display: block;
+      position: relative;
+      transition: all 0.1s ease 0s;
+      img {
+        width: 100%;
+      }
+    }
+    .box-rating {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(#000,0.7);
+      font-size: 0;
+      z-index: 2;
+      @extend %justify;
+      padding: 14px 24px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.1s ease 0s;
+      @media #{$large-mobile} {
+        padding: 14px 16px;
+      }
+      @media #{$small-only} {
+        display: none;
+      }
+      .item-rating {
+        color: rgba(#fff,0.9);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        position: relative;
+        &.kinopoisk {
+          padding: 0 0 0 18px;
+          &:before {
+            content: $icon-kinopoisk;
+            @extend .icomoon;
+            font-size: 14px;
+            color: rgba(#fff,0.7);
+            display: block;
+            position: absolute;
+            @include center(y);
+            left: 0;
+          }
+        }
+        &.imdb {
+          padding: 0 0 0 34px;
+          &:before {
+            content: $icon-imdb;
+            @extend .icomoon;
+            font-size: 12px;
+            color: rgba(#fff,0.7);
+            display: block;
+            position: absolute;
+            @include center(y);
+            left: 0;
+          }
+        }
+        &.tvguru {
+          padding: 0 0 0 18px;
+          &:before {
+            content: $icon-tvguru;
+            @extend .icomoon;
+            font-size: 12px;
+            color: rgba(#fff,0.7);
+            display: block;
+            position: absolute;
+            @include center(y);
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  .serial-cart-info {
+    position: relative;
+    > a {
+      display: block;
+      width: 100%;
+      padding: 16px 75px 0 0;
+      text-decoration: none;
+      @media #{$small-only} {
+        padding: 8px 0 0 0;
+      }
+      .serial-title {
+        display: block;
+        width: 100%;
+        line-height: 1.6;
+        @media #{$large-only} {
+          line-height: 1.2;
+          margin-bottom: 4px;
+        }
+        span {
+          display: inline;
+          color: rgba(#1e1e1e,0.9);
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 21px;
+          transition: color 0.1s ease 0s;
+          background-position: 0 23px;
+          background-repeat: repeat-x;
+          background-size: 1px 1px;
+          @media #{$large-only} {
+            font-size: 17px;
+            line-height: 18px;
+            background-position: 0 18px;
+          }
+          @media #{$medium-mobile} {
+            font-size: 18px;
+            line-height: 19px;
+            background-position: 0 19px;
+          }
+          @media #{$small-only} {
+            font-size: 16px;
+            line-height: 17px;
+            background-position: 0 17px;
+          }
+        }
+      }
+      .serial-original-title {
+        display: block;
+        width: 100%;
+        color: rgba(#000,0.5);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.2;
+        @media #{$large-only} {
+          font-size: 13px;
+        }
+        @media #{$small-only} {
+          font-size: 12px;
+        }
+      }
+    }
+    .box-likes {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 20px;
+      font-size: 0;
+      @media #{$small-only} {
+        display: none;
+      }
+      .field-likes {
+        display: block;
+        position: relative;
+        color: rgba(#010101,0.5);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+        padding-left: 22px;
+        text-decoration: none;
+        &:hover {
+          color: $blue;
+          &:after {
+            color: rgba($blue,0.5);
+          }
+        }
+        &:after {
+          content: $icon-like;
+          @extend .icomoon;
+          color: #dfdfdf;
+          font-size: 15px;
+          display: block;
+          position: absolute;
+          @include center(y);
+          left: 0;
+          text-indent: 1px;
+        }
+        &.active {
+          color: $blue;
+          &:after {
+            content: $icon-like-stroke;
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+}

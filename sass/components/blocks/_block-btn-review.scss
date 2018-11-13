@@ -1,0 +1,26 @@
+.block-btn-review {
+  text-align: center;
+  padding: 16px 20px;
+  @media #{$small-only} {
+    padding: 10px 0 0;
+  }
+  .title {
+    color: #0083da;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 18px;
+    @media #{$small-only} {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+  .btn {
+    width: 33.3333%;
+    max-width: 250px;
+    @media #{$small-only} {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+}

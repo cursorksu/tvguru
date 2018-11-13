@@ -1,0 +1,321 @@
+footer {
+  background: #000;
+  min-height: 162px;
+  padding: 0;
+  z-index: 10;
+  position: relative;
+  overflow: hidden;
+  .l-footer {
+    .footer-top {
+      padding: 23px 30px 15px;
+      border-bottom: 1px solid #444;
+      @media #{$medium-mobile} {
+        padding: 15px 0 15px;
+      }
+      @media #{$small-only} {
+        padding: 30px 0;
+      }
+      .box-logo {
+        display: block;
+        float: left;
+        padding: 2px 64px 0 4px;
+        @media #{$large-mobile} {
+          padding-right: 40px;
+        }
+        @media #{$medium-mobile} {
+          padding: 0 0;
+          margin-bottom: 10px;
+          width: 100%;
+          text-align: center;
+        }
+        @media #{$small-only} {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 28px;
+        }
+        .logo {
+          display: inline-block;
+          a {
+            display: block;
+            img {
+              height: 32px;
+            }
+            &:hover {
+              .icon-logo {
+                .path7 {
+                  &:before {
+                    text-shadow: 0 0 15px rgba($blue,1);
+                  }
+                }
+              }
+            }
+            .icon-logo {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 32px;
+              .path7 {
+                &:before {
+                  transition: all 0.1s ease 0s;
+                }
+              }
+            }
+          }
+        }
+      }
+      .social-links {
+        display: block!important;
+        float: right;
+        margin: 1px 0;
+        @media #{$small-only} {
+          margin: 0 0;
+          width: 100%;
+        }
+        .social {
+          @media #{$small-only} {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .footer-nav {
+      display: block;
+      float: left;
+      padding: 9px 0;
+      //margin-bottom: 14px;
+      @media #{$small-only} {
+        margin-bottom: 18px;
+      }
+      ul.menu {
+        font-size: 0;
+        text-align: left;
+        @media #{$small-only} {
+          text-align: center;
+        }
+        li {
+          display: inline-block;
+          vertical-align: top;
+          padding-right: 36px;
+          @media #{$medium-mobile} {
+            padding-right: 26px;
+          }
+          @media #{$small-only} {
+            padding: 0 30px 18px;
+          }
+          &:last-child {
+            padding-right: 0;
+            @media #{$small-only} {
+              padding-right: 20px;
+            }
+          }
+          a {
+            display: inline-block;
+            opacity: 0.6;
+            color: white;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            text-decoration: none;
+            transition: all 0.1s ease 0s;
+            @media #{$medium-mobile} {
+              font-size: 14px;
+            }
+            &:hover {
+              opacity: 1;
+              color: $blue;
+            }
+          }
+        }
+      }
+    }
+    .footer-copyright {
+      padding: 31px 30px;
+      @extend %justify;
+      @media #{$medium-only} {
+        padding: 20px 0;
+      }
+      @media #{$small-only} {
+        padding: 30px 0;
+      }
+      .copyright {
+        display: inline-block;
+        vertical-align: middle;
+        opacity: 0.35;
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        @media #{$medium-only} {
+          font-size: 14px;
+        }
+        @media #{$small-only} {
+          text-align: center;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .box-right {
+      display: inline-block;
+      vertical-align: middle;
+      @media #{$small-only} {
+        text-align: center;
+        width: 100%;
+      }
+      .link {
+        display: inline-block;
+        vertical-align: middle;
+        opacity: 0.6;
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        text-decoration: none;
+        transition: all 0.1s ease 0s;
+        @media #{$medium-only} {
+          font-size: 14px;
+        }
+        &:hover {
+          opacity: 1;
+          color: $blue;
+        }
+        &.fan {
+          margin-right: 20px;
+        }
+      }
+      .box-statistic {
+        padding-left: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        @media #{$small-only} {
+          display: none;
+        }
+      }
+    }
+
+    .footer-breadcrumb-line {
+      padding: 21px 280px 14px 30px;
+      position: relative;
+      border-bottom: 1px solid #444;
+      @media #{$medium-mobile} {
+        padding: 15px 0 15px;
+      }
+      @media #{$small-only} {
+        padding: 20px 0 12px;
+      }
+      + .footer-top {
+        border-bottom: none;
+        padding: 28px 30px 15px;
+        @media #{$medium-mobile} {
+          padding: 22px 0;
+        }
+        @media #{$small-only} {
+          padding: 30px 0;
+          border-bottom: 1px solid #444;
+        }
+      }
+      .box-right {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 25px;
+      }
+    }
+  }
+}
+
+.social-links {
+  .social {
+    font-size: 0;
+    text-align: left;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 5px;
+      @media #{$small-only} {
+        padding: 0 8px;
+      }
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+      a {
+        width: 34px;
+        height: 34px;
+        display: block;
+        border: 1px solid rgba(#ababab, 0.5);
+        text-align: center;
+        text-decoration: none;
+        background: transparent;
+        @extend %vertical;
+        transition: all 0.1s ease 0s;
+        &:hover {
+          border-color: #fff;
+          span {
+            opacity: 1;
+            color: #fff;
+          }
+        }
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 16px;
+          opacity: 0.75;
+          color: #cdcdcd;
+          transition: all 0.1s ease 0s;
+        }
+        &.youtube {
+          &:hover {
+            border-color: $youtube;
+            background: $youtube;
+          }
+        }
+        &.twitter {
+          &:hover {
+            border-color: $twitter_color;
+            background: $twitter_color;
+          }
+        }
+        &.vk {
+          &:hover {
+            border-color: $vk_color;
+            background: $vk_color;
+          }
+        }
+        &.facebook {
+          &:hover {
+            border-color: $facebook_color;
+            background: $facebook_color;
+          }
+        }
+        &.instagram {
+          &:hover {
+            border: none;
+            border-color: $instagram;
+            background:
+                /////// Use radial gradients to get the rounded
+                /////// gradient effect in each corner
+
+                // left bottom
+                radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+                radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+                  // left top
+                radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+                radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+                  //  right top
+                radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+                radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+                  // right bottom
+                radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+
+                  /////// create a base coat to smooth
+                  /////// corner gradients
+                linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+          }
+        }
+      }
+    }
+  }
+}

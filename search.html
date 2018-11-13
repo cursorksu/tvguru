@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>TVGuru – новости сериалов, сенсации, трейлеры, обзоры новинок</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+  <meta name="author" content=""/>
+  <meta name="copyright" content="(c)">
+  <!--OpenSans только на главной-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,800&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/tvguru.min.css"/>
+
+  <!--[if gte IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"/>
+  <meta name="HandheldFriendly" content="True"/>
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <meta http-equiv="cleartype" content="on"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+  <meta name="application-name" content="Title"/>
+  <meta name="msapplication-tooltip" content="Description"/>
+  <meta name="msapplication-window" content="width=400;height=300"/>
+  <meta http-equiv="imagetoolbar" content="no"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="msthemecompatible" content="no"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="format-detection" content="address=no"/>
+
+</head>
+<body>
+
+<div class="wrapper">
+  <header role="presentation">
+    <div class="l-header">
+      <div class="row">
+        <div class="small-12 columns">
+          <div class="l-header-content clearfix">
+            <button id="show-mobile-menu" class="hamburger hamburger--spin" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <div class="logo">
+              <a href="/" class="logotype" title="tvguru.ru"><span class="icon-logo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span></a>
+            </div>
+            <nav class="top-nav">
+              <ul>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Превью</a></li>
+                <li><a href="#">Сериалы</a></li>
+                <li><a href="#">Расписание</a></li>
+                <li><a href="#">Рецензии</a></li>
+              </ul>
+            </nav>
+            <div class="block-ajax-search">
+              <div class="ajax-search-container" id="ajax-s-container">
+                <div class="wrap">
+                  <form autocomplete="off" method="get" action="/">
+                    <button type="submit" class="ajax-inp-submit"><span class="icon-search"></span></button>
+                    <input name="do" value="search" type="hidden">
+                    <input name="subaction" value="search" type="hidden">
+                    <input type="text" name="story" class="ajax-inp" placeholder="Поиск">
+                  </form>
+                  <span class="close-ajax-search"><span class="icon-close-light"></span></span>
+                </div>
+              </div>
+              <div class="response-container">
+                <div class="block-ajax-results">
+                  <div class="cuScroll">
+                    <div class="search-dark-list">
+                      <div class="item-search-serial">
+                        <div class="field-img">
+                          <a href="#"><img src="images/posters/search-poster-1.jpg" alt="img"></a>
+                        </div>
+                        <div class="serial-info">
+                          <div class="text_ssb">
+                            <h2><a href="#" title="Игра престолов">Игра престолов</a></h2>
+                            <div class="field-original-title">Game of Thrones</div>
+                            <p class="textailor">Американский сериал, созданый по мотивам цикла романов писателя Джорджа Мартина. Действие картины происходит в придуманном мире, который во многом напоминает Европу в средние века. В отличие от реального мира, здесь года длятся по несколько лет. Сериал начинается как раз с конца долгого лета, которое длилось почти десятилетие. Сразу несколько сюжетных линий переплетаются между собой. Эт...</p>
+                            <div class="action-links">
+                              <div class="left-btn">
+                                <a href="#" class="btn"><span class="help">Сериалы</span></a>
+                              </div>
+                              <div class="right-btn">
+                                <a href="#" title="game-of-thrones" class="btn-detail">Подробнее <span class="icon-arrow-right"></span></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item-search-serial">
+                        <div class="field-img">
+                          <a href="#"><img src="images/posters/search-poster-1.jpg" alt="img"></a>
+                        </div>
+                        <div class="serial-info">
+                          <div class="text_ssb">
+                            <h2><a href="#" title="Игра престолов">Игра престолов</a></h2>
+                            <div class="field-original-title">Game of Thrones</div>
+                            <p class="textailor">Американский сериал, созданый по мотивам цикла романов писателя Джорджа Мартина. Действие картины происходит в придуманном мире, который во многом напоминает Европу в средние века. В отличие от реального мира, здесь года длятся по несколько лет. Сериал начинается как раз с конца долгого лета, которое длилось почти десятилетие. Сразу несколько сюжетных линий переплетаются между собой. Эт...</p>
+                            <div class="action-links">
+                              <div class="left-btn">
+                                <a href="#" class="btn"><span class="help">Сериалы</span></a>
+                              </div>
+                              <div class="right-btn">
+                                <a href="#" title="game-of-thrones" class="btn-detail">Подробнее <span class="icon-arrow-right"></span></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ajax-news">
+                      <ul class="articles-list small-block-grid-2 medium-block-grid-2 large-block-grid-3">
+                        <li>
+                          <div class="item-article-cart">
+                            <a href="#" class="article-top">
+                              <img src="images/articles/article-img-big-1.jpg" alt="img">
+                              <span class="article-category">анонсы</span>
+                            </a>
+                            <a href="#" class="article-body">
+                              <div class="article-title">
+                                <span>Джордж Мартин объявил о создании 5-го спин-оффа по «Игре престолов»</span>
+                              </div>
+                            </a>
+                            <div class="article-footer">
+                              <div class="field-date">24 мая 2017</div>
+                              <div class="reviews-likes">
+                                <a href="#" class="field-reviews">0</a>
+                                <a href="#" class="field-likes">1</a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item-article-cart">
+                            <a href="#" class="article-top">
+                              <img src="images/articles/article-img-big-2.jpg" alt="img">
+                              <span class="article-category">статьи</span>
+                            </a>
+                            <a href="#" class="article-body">
+                              <div class="article-title">
+                                <span>Спин-оффы «Игры престолов»: о чем они могут быть?</span>
+                              </div>
+                            </a>
+                            <div class="article-footer">
+                              <div class="field-date">24 мая 2017</div>
+                              <div class="reviews-likes">
+                                <a href="#" class="field-reviews active">3</a>
+                                <a href="#" class="field-likes active">2</a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item-article-cart">
+                            <a href="#" class="article-top">
+                              <img src="images/articles/article-img-big-3.jpg" alt="img">
+                              <span class="article-category">анонсы</span>
+                            </a>
+                            <a href="#" class="article-body">
+                              <div class="article-title">
+                                <span>Джордж Мартин объявил о создании 5-го спин-оффа по «Игре престолов»</span>
+                              </div>
+                            </a>
+                            <div class="article-footer">
+                              <div class="field-date">24 мая 2017</div>
+                              <div class="reviews-likes">
+                                <a href="#" class="field-reviews">0</a>
+                                <a href="#" class="field-likes">0</a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item-article-cart">
+                            <a href="#" class="article-top">
+                              <img src="images/articles/article-img-big-1.jpg" alt="img">
+                              <span class="article-category">анонсы</span>
+                            </a>
+                            <a href="#" class="article-body">
+                              <div class="article-title">
+                                <span>Джордж Мартин объявил о создании 5-го спин-оффа по «Игре престолов»</span>
+                              </div>
+                            </a>
+                            <div class="article-footer">
+                              <div class="field-date">24 мая 2017</div>
+                              <div class="reviews-likes">
+                                <a href="#" class="field-reviews">0</a>
+                                <a href="#" class="field-likes">1</a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item-article-cart">
+                            <a href="#" class="article-top">
+                              <img src="images/articles/article-img-big-2.jpg" alt="img">
+                              <span class="article-category">статьи</span>
+                            </a>
+                            <a href="#" class="article-body">
+                              <div class="article-title">
+                                <span>Спин-оффы «Игры престолов»: о чем они могут быть?</span>
+                              </div>
+                            </a>
+                            <div class="article-footer">
+                              <div class="field-date">24 мая 2017</div>
+                              <div class="reviews-likes">
+                                <a href="#" class="field-reviews active">3</a>
+                                <a href="#" class="field-likes active">2</a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item-article-cart">
+                            <a href="#" class="article-top">
+                              <img src="images/articles/article-img-big-3.jpg" alt="img">
+                              <span class="article-category">анонсы</span>
+                            </a>
+                            <a href="#" class="article-body">
+                              <div class="article-title">
+                                <span>Джордж Мартин объявил о создании 5-го спин-оффа по «Игре престолов»</span>
+                              </div>
+                            </a>
+                            <div class="article-footer">
+                              <div class="field-date">24 мая 2017</div>
+                              <div class="reviews-likes">
+                                <a href="#" class="field-reviews">0</a>
+                                <a href="#" class="field-likes">0</a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="view-all">
+                    <a href="#"><span class="help">Показать все Результаты <span class="icon-arrow-result"></span></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-right">
+              <div class="login-wget" id="login-wget">
+                <div class="info">
+                  <div class="help">
+                    <span class="icon-login"></span>
+                  </div>
+                </div>
+                <div class="login-window">
+                  <div class="social-links">
+                    <a href="#" title="Войти через ВКонтакте" class="soc vk"><span class="icon-vk"></span></a>
+                    <a href="#" title="Войти через Facebook" class="soc fb"><span class="icon-facebook"></span></a>
+                    <a href="#" title="Войти через Одноклассники" class="soc od"><span class="icon-odnoklassniki"></span></a>
+                  </div>
+                </div>
+              </div>
+              <!--User Logined-->
+              <!--<div class="login-wget logined" id="login-wget">
+                <div class="info">
+                  <a href="#mobile-user-nav" class="mobile-user-nav mini-login-photo">
+                    <img src="images/user-avatar.jpg" alt="img">
+                    <span class="items">3</span>
+                  </a>
+                </div>
+                <div id="mobile-user-nav">
+                  <div>
+                    <div class="field-user">
+                      <div class="field-img">
+                        <a href="#"><img src="images/user-avatar.jpg" alt="img"></a>
+                      </div>
+                      <div class="user-name">
+                        <a href="#">Дейнерис Таргариен</a>
+                      </div>
+                      <div class="link-logout">
+                        <a href="#">Выход</a>
+                      </div>
+                    </div>
+                    <div class="user-links">
+                      <div class="link">
+                        <a href="#subpanel-1"><span class="icon-notice"></span> Уведомления</a>
+                        <span class="items">3</span>
+                      </div>
+                      <div class="link">
+                        <a href="#"><span class="icon-bookmarks"></span> Закладки</a>
+                        <span class="items"></span>
+                      </div>
+                      <div class="link">
+                        <a href="#"><span class="icon-comment"></span> Комментарии</a>
+                        <span class="items">1</span>
+                      </div>
+                    </div>
+                    <div id="subpanel-1" class="Panel">
+                      <div class="subpanel-content">
+                        <div class="user-notifications-list">
+                          <div class="item-row">
+                            <div class="item-notification">
+                              <a href="#" class="field-img"><img src="images/user-avatar.jpg" alt="img"></a>
+                              <div class="name"><a href="#">Иван Иванов</a></div>
+                              <div class="description">ответил на ваш комментарий:</div>
+                              <div class="message">
+                                <p>Есть пруфы?</p>
+                              </div>
+                              <div class="field-date">
+                                <span class="date">20.03.2017</span> <span class="time">17:30</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item-row">
+                            <div class="item-notification">
+                              <a href="#" class="field-img"><img src="images/user-avatar.jpg" alt="img"></a>
+                              <div class="name"><a href="#">Александр Моргуль</a></div>
+                              <div class="description">ответил на ваш комментарий:</div>
+                              <div class="message">
+                                <p>Ну. каждому своё)Хотя, если снят на реаль...А про историчность — из...</p>
+                              </div>
+                              <div class="field-date">
+                                <span class="date">20.03.2017</span> <span class="time">17:30</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item-row">
+                            <div class="item-notification">
+                              <a href="#" class="field-img"><img src="images/user-avatar.jpg" alt="img"></a>
+                              <div class="name"><a href="#">Вова Татарченков</a></div>
+                              <div class="description">ответил на ваш комментарий:</div>
+                              <div class="message">
+                                <p>У него с финала Брекин...</p>
+                              </div>
+                              <div class="field-date">
+                                <span class="date">20.03.2017</span> <span class="time">17:30</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main role="main" class="main">
+    <div class="l-main">
+      <div class="row">
+        <div class="small-12 columns">
+          <div class="l-main-content grey">
+            <div class="page-search">
+              <div class="page-search-top">
+                <div class="top clearfix">
+                  <div class="box-title">
+                    <div class="page-title">Поиск по сайту</div>
+                    <div class="page-description">Найди то, что тебе по душе!</div>
+                  </div>
+                  <form action="#" class="search-form">
+                    <div class="form-group field-search">
+                      <input type="search" placeholder="Поиск" value="игра пре">
+                    </div>
+                    <div class="form-group field-time">
+                      <div class="cuSelect">
+                        <select id="timing" name="searchdate">
+                          <option selected="selected" value="0">За все время</option>
+                          <option value="-1">С последнего визита</option>
+                          <option value="1">За сутки назад</option>
+                          <option value="7">За неделю назад</option>
+                          <option value="14">За 2 недели назад</option>
+                          <option value="30">За месяц назад</option>
+                          <option value="90">За 3 месяца назад</option>
+                          <option value="180">За 6 месяцев назад</option>
+                          <option value="365">За год назад</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group field-group">
+                      <div class="cuSelect">
+                        <select id="razdels" class="form-control" name="catlist" size="1">
+                          <option selected="selected" value="0">Все разделы</option>
+                          <option value="2">Новости</option>
+                          <option class="sub" value="54">Спойлеры</option>
+                          <option class="sub" value="51">Отзывы</option>
+                          <option class="sub" value="41">Сенсации</option>
+                          <option class="sub" value="38">Рейтинги</option>
+                          <option class="sub" value="42">Актеры</option>
+                          <option class="sub" value="43">Персонажи</option>
+                          <option class="sub" value="44">Создатели</option>
+                          <option class="sub" value="36">Промо-фото</option>
+                          <option class="sub" value="39">Синопсисы</option>
+                          <option class="sub" value="37">Слухи</option>
+                          <option class="sub" value="32">Интриги</option>
+                          <option class="sub" value="40">Анонсы</option>
+                          <option class="sub" value="35">Промо-видео</option>
+                          <option class="sub" value="47">Сьемки</option>
+                          <option value="7">Превью</option>
+                          <option value="3">Статьи</option>
+                          <option class="sub" value="45">Обзоры</option>
+                          <option class="sub" value="46">Интервью</option>
+                          <option value="8">Сериалы</option>
+                          <option class="sub" value="52">Вестерн</option>
+                          <option class="sub" value="31">Мюзикл</option>
+                          <option class="sub" value="29">Биография</option>
+                          <option class="sub" value="30">История</option>
+                          <option class="sub" value="9">Боевик</option>
+                          <option class="sub" value="28">Аниме</option>
+                          <option class="sub" value="27">Cпорт</option>
+                          <option class="sub" value="26">Военный</option>
+                          <option class="sub" value="25">Ток-шоу</option>
+                          <option class="sub" value="10">Детектив</option>
+                          <option class="sub" value="11">Драма</option>
+                          <option class="sub" value="12">Комедия</option>
+                          <option class="sub" value="13">Триллер</option>
+                          <option class="sub" value="14">Ужасы</option>
+                          <option class="sub" value="15">Фантастика</option>
+                          <option class="sub" value="17">Фэнтези</option>
+                          <option class="sub" value="18">Приключения</option>
+                          <option class="sub" value="19">Мелодрама</option>
+                          <option class="sub" value="20">Мультсериалы</option>
+                          <option class="sub" value="21">Семейный</option>
+                          <option class="sub" value="22">Криминал</option>
+                          <option class="sub" value="23">Музыка</option>
+                          <option class="sub" value="24">Документальный</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group form-submit">
+                      <button class="btn btn-solid" type="submit"><span class="help">Искать</span></button>
+                    </div>
+                  </form>
+                </div>
+                <div class="line-search-info">По вашему за просу найдено 60 ответов (результаты поиска 1-12)</div>
+              </div>
+              <div class="page-content">
+                <ul class="search-dark-list">
+                  <li>
+                    <div class="item-search-serial">
+                      <div class="field-img">
+                        <a href="#"><img src="images/posters/search-poster-1.jpg" alt="img"></a>
+                      </div>
+                      <div class="serial-info">
+                        <div class="text_ssb">
+                          <h2><a href="#" title="Игра престолов">Игра престолов</a></h2>
+                          <div class="field-original-title">Game of Thrones</div>
+                          <a href="#" class="field-likes">411</a>
+                          <p class="textailor">Американский сериал, созданый по мотивам цикла романов писателя Джорджа Мартина. Действие картины происходит в придуманном мире, который во многом напоминает Европу в средние века. В отличие от реального мира, здесь года длятся по несколько лет. Сериал начинается как раз с конца долгого лета, которое длилось почти десятилетие. Сразу несколько сюжетных линий переплетаются между собой. Это и борьба человека за власть, и борьба отважных мужчин против притеснителей, и путешествие по миру принцессы, которую изгнали из королевства. Все начинается с того, что политические интриги приводят к гражданской войне за власть управлять над государством Семь Королевств. В конфликте участвует большое количество людей, у каждого из которых своя судьба, свои семьи, свои страхи и проблемы. Второй сезон полностью посвящен событиям гражданской войны. Брат восстает на брата, изобретаются хитрые уловки и интриги. Не обойдется здесь без черной магии, без драконов и других способов завоевать авторитет. В третьем сезоне будут подведены итоги войны, а в четвертом произойдет кульминация всех событий, произошедших до этого. Пятый сезон открывает тайны и жизнь королевства Дорн. Сериал завоевал любовь зрителей своей интригой, которая сохраняется с первых и до последних минут каждой серии. Неожиданность – вот та причина, по которой «Игра престолов» продолжает оставаться культовым сериалом во многих странах мира. Актеры идеально вжились в свои роли, никаких претензий не может быть предъявлено и к спецэффектам сериала, к музыкальному сопровождению. Все выполнено на высочайшем уровне, а сюжет становится понятен даже для тех, кто никогда не читал книги Джорджа Мартина.</p>
+                          <div class="action-links">
+                            <div class="left-btn">
+                              <a href="#" class="btn"><span class="help">Сериалы</span></a>
+                            </div>
+                            <div class="right-btn">
+                              <a href="#" title="game-of-thrones" class="btn-detail">Подробнее <span class="icon-arrow-right"></span></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-search-serial">
+                      <div class="field-img">
+                        <a href="#"><img src="images/posters/search-poster-1.jpg" alt="img"></a>
+                      </div>
+                      <div class="serial-info">
+                        <div class="text_ssb">
+                          <h2><a href="#" title="Игра престолов">Игра престолов</a></h2>
+                          <div class="field-original-title">Game of Thrones</div>
+                          <a href="#" class="field-likes active">411</a>
+                          <p class="textailor">Американский сериал, созданый по мотивам цикла романов писателя Джорджа Мартина. Действие картины происходит в придуманном мире, который во многом напоминает Европу в средние века. В отличие от реального мира, здесь года длятся по несколько лет. Сериал начинается как раз с конца долгого лета, которое длилось почти десятилетие. Сразу несколько сюжетных линий переплетаются между собой. Это и борьба человека за власть, и борьба отважных мужчин против притеснителей, и путешествие по миру принцессы, которую изгнали из королевства. Все начинается с того, что политические интриги приводят к гражданской войне за власть управлять над государством Семь Королевств. В конфликте участвует большое количество людей, у каждого из которых своя судьба, свои семьи, свои страхи и проблемы. Второй сезон полностью посвящен событиям гражданской войны. Брат восстает на брата, изобретаются хитрые уловки и интриги. Не обойдется здесь без черной магии, без драконов и других способов завоевать авторитет. В третьем сезоне будут подведены итоги войны, а в четвертом произойдет кульминация всех событий, произошедших до этого. Пятый сезон открывает тайны и жизнь королевства Дорн. Сериал завоевал любовь зрителей своей интригой, которая сохраняется с первых и до последних минут каждой серии. Неожиданность – вот та причина, по которой «Игра престолов» продолжает оставаться культовым сериалом во многих странах мира. Актеры идеально вжились в свои роли, никаких претензий не может быть предъявлено и к спецэффектам сериала, к музыкальному сопровождению. Все выполнено на высочайшем уровне, а сюжет становится понятен даже для тех, кто никогда не читал книги Джорджа Мартина.</p>
+                          <div class="action-links">
+                            <div class="left-btn">
+                              <a href="#" class="btn"><span class="help">Сериалы</span></a>
+                            </div>
+                            <div class="right-btn">
+                              <a href="#" title="game-of-thrones" class="btn-detail">Подробнее <span class="icon-arrow-right"></span></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="articles-list small-block-grid-2 medium-block-grid-3 large-block-grid-3">
+                  <li>
+                    <div class="item-article-cart">
+                      <a href="#" class="article-top">
+                        <img src="images/articles/article-img-big-1.jpg" alt="img">
+                        <span class="article-category">промо-видео</span>
+                      </a>
+                      <a href="#" class="article-body">
+                        <div class="article-title">
+                          <span>Джордж Мартин объявил о создании 5-го спин-оффа по «Игре престолов»</span>
+                        </div>
+                      </a>
+                      <div class="article-footer">
+                        <div class="field-date">24 мая 2017</div>
+                        <div class="reviews-likes">
+                          <a href="#" class="field-reviews">0</a>
+                          <a href="#" class="field-likes">1</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-article-cart">
+                      <a href="#" class="article-top">
+                        <img src="images/articles/article-img-big-2.jpg" alt="img">
+                        <span class="article-category">промо-фото</span>
+                      </a>
+                      <a href="#" class="article-body">
+                        <div class="article-title">
+                          <span>Спин-оффы «Игры престолов»: о чем они могут быть?</span>
+                        </div>
+                      </a>
+                      <div class="article-footer">
+                        <div class="field-date">24 мая 2017</div>
+                        <div class="reviews-likes">
+                          <a href="#" class="field-reviews active">2</a>
+                          <a href="#" class="field-likes active">3</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-article-cart">
+                      <a href="#" class="article-top">
+                        <img src="images/articles/article-img-big-3.jpg" alt="img">
+                        <span class="article-category">промо-фото</span>
+                      </a>
+                      <a href="#" class="article-body">
+                        <div class="article-title">
+                          <span>Джордж Мартин объявил о создании 5-го спин-оффа по «Игре престолов»</span>
+                        </div>
+                      </a>
+                      <div class="article-footer">
+                        <div class="field-date">24 мая 2017</div>
+                        <div class="reviews-likes">
+                          <a href="#" class="field-reviews">0</a>
+                          <a href="#" class="field-likes">0</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-article-cart">
+                      <a href="#" class="article-top">
+                        <img src="images/articles/article-img-big-1.jpg" alt="img">
+                        <span class="article-category">промо-видео</span>
+                      </a>
+                      <a href="#" class="article-body">
+                        <div class="article-title">
+                          <span>Джордж Мартин объявил о создании 5-го спин-оффа по «Игре престолов»</span>
+                        </div>
+                      </a>
+                      <div class="article-footer">
+                        <div class="field-date">24 мая 2017</div>
+                        <div class="reviews-likes">
+                          <a href="#" class="field-reviews">0</a>
+                          <a href="#" class="field-likes">1</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-article-cart">
+                      <a href="#" class="article-top">
+                        <img src="images/articles/article-img-big-2.jpg" alt="img">
+                        <span class="article-category">промо-фото</span>
+                      </a>
+                      <a href="#" class="article-body">
+                        <div class="article-title">
+                          <span>Спин-оффы «Игры престолов»: о чем они могут быть?</span>
+                        </div>
+                      </a>
+                      <div class="article-footer">
+                        <div class="field-date">24 мая 2017</div>
+                        <div class="reviews-likes">
+                          <a href="#" class="field-reviews active">2</a>
+                          <a href="#" class="field-likes active">3</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-article-cart">
+                      <a href="#" class="article-top">
+                        <img src="images/articles/article-img-big-3.jpg" alt="img">
+                        <span class="article-category">промо-фото</span>
+                      </a>
+                      <a href="#" class="article-body">
+                        <div class="article-title">
+                          <span>Джордж Мартин объявил о создании 5-го спин-оффа по «Игре престолов»</span>
+                        </div>
+                      </a>
+                      <div class="article-footer">
+                        <div class="field-date">24 мая 2017</div>
+                        <div class="reviews-likes">
+                          <a href="#" class="field-reviews">0</a>
+                          <a href="#" class="field-likes">0</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-article-cart">
+                      <a href="#" class="article-top">
+                        <img src="images/articles/article-img-big-1.jpg" alt="img">
+                        <span class="article-category">промо-видео</span>
+                      </a>
+                      <a href="#" class="article-body">
+                        <div class="article-title">
+                          <span>Джордж Мартин объявил о создании 5-го спин-оффа по «Игре престолов»</span>
+                        </div>
+                      </a>
+                      <div class="article-footer">
+                        <div class="field-date">24 мая 2017</div>
+                        <div class="reviews-likes">
+                          <a href="#" class="field-reviews">0</a>
+                          <a href="#" class="field-likes">1</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-article-cart">
+                      <a href="#" class="article-top">
+                        <img src="images/articles/article-img-big-2.jpg" alt="img">
+                        <span class="article-category">промо-фото</span>
+                      </a>
+                      <a href="#" class="article-body">
+                        <div class="article-title">
+                          <span>Спин-оффы «Игры престолов»: о чем они могут быть?</span>
+                        </div>
+                      </a>
+                      <div class="article-footer">
+                        <div class="field-date">24 мая 2017</div>
+                        <div class="reviews-likes">
+                          <a href="#" class="field-reviews active">2</a>
+                          <a href="#" class="field-likes active">3</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-article-cart">
+                      <a href="#" class="article-top">
+                        <img src="images/articles/article-img-big-3.jpg" alt="img">
+                        <span class="article-category">промо-фото</span>
+                      </a>
+                      <a href="#" class="article-body">
+                        <div class="article-title">
+                          <span>Джордж Мартин объявил о создании 5-го спин-оффа по «Игре престолов»</span>
+                        </div>
+                      </a>
+                      <div class="article-footer">
+                        <div class="field-date">24 мая 2017</div>
+                        <div class="reviews-likes">
+                          <a href="#" class="field-reviews">0</a>
+                          <a href="#" class="field-likes">0</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-article-cart">
+                      <a href="#" class="article-top">
+                        <img src="images/articles/article-img-big-1.jpg" alt="img">
+                        <span class="article-category">промо-видео</span>
+                      </a>
+                      <a href="#" class="article-body">
+                        <div class="article-title">
+                          <span>Джордж Мартин объявил о создании 5-го спин-оффа по «Игре престолов»</span>
+                        </div>
+                      </a>
+                      <div class="article-footer">
+                        <div class="field-date">24 мая 2017</div>
+                        <div class="reviews-likes">
+                          <a href="#" class="field-reviews">0</a>
+                          <a href="#" class="field-likes">1</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-article-cart">
+                      <a href="#" class="article-top">
+                        <img src="images/articles/article-img-big-2.jpg" alt="img">
+                        <span class="article-category">промо-фото</span>
+                      </a>
+                      <a href="#" class="article-body">
+                        <div class="article-title">
+                          <span>Спин-оффы «Игры престолов»: о чем они могут быть?</span>
+                        </div>
+                      </a>
+                      <div class="article-footer">
+                        <div class="field-date">24 мая 2017</div>
+                        <div class="reviews-likes">
+                          <a href="#" class="field-reviews active">2</a>
+                          <a href="#" class="field-likes active">3</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-article-cart">
+                      <a href="#" class="article-top">
+                        <img src="images/articles/article-img-big-3.jpg" alt="img">
+                        <span class="article-category">промо-фото</span>
+                      </a>
+                      <a href="#" class="article-body">
+                        <div class="article-title">
+                          <span>Джордж Мартин объявил о создании 5-го спин-оффа по «Игре престолов»</span>
+                        </div>
+                      </a>
+                      <div class="article-footer">
+                        <div class="field-date">24 мая 2017</div>
+                        <div class="reviews-likes">
+                          <a href="#" class="field-reviews">0</a>
+                          <a href="#" class="field-likes">0</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="box-pagination">
+                  <ul class="pagination hide-for-small-only">
+                    <li class="arrow">
+                      <a href="#">
+                        <span class="icon-arrow-left"></span>
+                      </a>
+                    </li>
+                    <li class="current">
+                      <a href="#">1</a>
+                    </li>
+                    <li>
+                      <a href="#">2</a>
+                    </li>
+                    <li>
+                      <a href="#">3</a>
+                    </li>
+                    <li>
+                      <a href='#'>4</a>
+                    </li>
+                    <li class="unavailable"><a href="">&hellip;</a></li>
+                    <li>
+                      <a href="#">16</a>
+                    </li>
+                    <li class="arrow">
+                      <a href="#">
+                        <span class="icon-arrow-right"></span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="pagination mobile-pagination show-for-small-only">
+                    <li class="arrow">
+                      <a href="#">
+                        <span class="icon-arrow-left"></span>
+                      </a>
+                    </li>
+                    <li class="current">
+                      <a href="#">1</a>
+                    </li>
+                    <li>
+                      <a href="#">2</a>
+                    </li>
+                    <li class="unavailable"><a href="">&hellip;</a></li>
+                    <li>
+                      <a href="#">16</a>
+                    </li>
+                    <li class="arrow">
+                      <a href="#">
+                        <span class="icon-arrow-right"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<nav id="mobile-nav">
+  <ul>
+    <li><a href="#">Новости</a></li>
+    <li><a href="#">Превью</a></li>
+    <li><a href="#">Сериалы</a></li>
+    <li><a href="#">Расписание</a></li>
+    <li><a href="#">Рецензии</a></li>
+  </ul>
+</nav>
+
+<footer role="contentinfo">
+  <div class="row">
+    <div class="small-12 medium-12 large-12 columns">
+      <div class="l-footer">
+        <div class="footer-breadcrumb-line">
+          <div class="box-breadcrumbs">
+            <ul class="breadcrumbs">
+              <li><a href="/">TVGuru.ru</a></li>
+              <li class="current"><a href="#">Поиск по сайту</a></li>
+            </ul>
+          </div>
+          <div class="box-right hide-for-small-only">
+            <a class="link" href="#">Реклама на сайте</a>
+            <div class="box-statistic">
+              <img src="images/stat.jpg" alt="img">
+            </div>
+          </div>
+        </div>
+        <div class="footer-top clearfix">
+          <div class="box-logo">
+            <div class="logo">
+              <a href="/" class="logotype" title="tvguru.ru"><span class="icon-logo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span></a>
+            </div>
+          </div>
+          <nav class="footer-nav hide-for-small-only">
+            <ul class="menu">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Превью</a></li>
+              <li><a href="#">Сериалы</a></li>
+              <li><a href="#">Расписание</a></li>
+              <li><a href="#">Рецензии</a></li>
+            </ul>
+          </nav>
+          <div class="social-links">
+            <ul class="social">
+              <li><a class="vk" href="#"><span class="icon-vk"></span></a></li>
+              <li><a class="youtube" href="#"><span class="icon-youtube"></span></a></li>
+              <li><a class="twitter" href="#"><span class="icon-twitter"></span></a></li>
+              <li><a class="instagram" href="#"><span class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright show-for-small-only">
+          <div class="copyright">© Copyright 2016-2017 TVGuru.ru</div>
+          <div class="box-right">
+            <a class="link" href="#">Реклама на сайте</a>
+            <div class="box-statistic">
+              <img src="images/stat.jpg" alt="img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/vendor/jquery.js"></script>
+<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+<script type="text/javascript" src="js/tvguru.lib.min.js"></script>
+<script type="text/javascript" src="js/bundle.js"></script>
+
+</body>
+</html>

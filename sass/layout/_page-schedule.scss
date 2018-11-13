@@ -1,0 +1,276 @@
+.page-schedule {
+  .page-header {
+    position: relative;
+    background: #fff;
+    padding: 40px 20px 46px 30px;
+    border-bottom: 1px solid #e6e6e6;
+    @media #{$medium-mobile} {
+      width: 100%;
+      padding: 30px 10px 40px 10px;
+    }
+    @media #{$small-only} {
+      width: 100%;
+      padding: 25px 10px 20px 10px;
+    }
+    .page-title {
+      display: block;
+      float: left;
+      margin: 0 0 0;
+      padding: 8px 0 9px;
+      @media only screen and (max-width: 1140px) and (min-width: 1025px) {
+        padding: 0 0 18px;
+      }
+      @media #{$medium-mobile} {
+        padding: 6px 0 13px;
+      }
+      @media #{$small-only} {
+        width: 100%;
+        margin-bottom: 16px;
+        padding: 0 0;
+      }
+    }
+    .block-search {
+      position: absolute;
+      right: 20px;
+      top: 40px;
+      left: 360px;
+      @media only screen and (max-width: 1140px) and (min-width: 1025px) {
+        position: relative;
+        width: 100%;
+        right: inherit;
+        top: inherit;
+        left: inherit;
+      }
+      @media #{$medium-mobile} {
+        right: 10px;
+        left: 260px;
+        top: 25px;
+      }
+      @media #{$small-only} {
+        position: relative;
+        right: inherit;
+        top: inherit;
+        left: inherit;
+      }
+    }
+
+    .share-top {
+      display: block;
+      float: right;
+      padding: 6px 0;
+      @media only screen and (max-width: 1140px) and (min-width: 1025px) {
+        padding: 0 0;
+        margin: -2px 0 0;
+      }
+      @media #{$medium-mobile} {
+        padding: 0 0;
+        margin: 0 0;
+      }
+      @media #{$small-only} {
+        width: 100%;
+        float: left;
+        padding: 0 0;
+        margin: 0 0;
+      }
+      .likely {
+        .likely__widget {
+          margin: 8px 2px;
+          @media #{$small-only} {
+            margin: 0 2px 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .page-content {
+    padding: 33px 20px 32px 30px;
+    @media #{$medium-mobile} {
+      padding: 30px 10px 32px;
+    }
+    @media #{$small-only} {
+      padding: 25px 10px 30px;
+    }
+  }
+  .schedule-wrapper {
+    .date-row {
+      &:first-child {
+        padding-top: 0;
+      }
+      .schedule-list {
+        @media #{$small-only} {
+          margin: 0 -12px;
+        }
+        li {
+          padding-bottom: 35px;
+          @media #{$small-only} {
+            padding: 0 12px 24px;
+          }
+          @media #{$mobile-only-2} {
+            width: 50%;
+          }
+          &:nth-child(2n+1) {
+            @media #{$mobile-only-2} {
+              clear: both;
+            }
+          }
+          &:nth-child(3n+1) {
+            @media #{$mobile-only-2} {
+              clear: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .date-row {
+    padding: 32px 0 12px;
+    border-bottom: 1px solid #cdcdcd;
+    @media #{$small-only} {
+      padding: 25px 0 6px;
+    }
+    .date-title {
+      color: #010101;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.2;
+      white-space: nowrap;
+      margin-bottom: 16px;
+      @media #{$medium-mobile} {
+        font-size: 20px;
+      }
+      @media #{$small-only} {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+      .date {
+        position: relative;
+        padding: 0 0 0 22px;
+        margin: 0 0 0 9px;
+        @media #{$medium-mobile} {
+          padding-left: 16px;
+          margin-left: 8px;
+        }
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 13px;
+          left: 0;
+          width: 6px;
+          height: 6px;
+          background-color: #010101;
+          border-radius: 50%;
+          @media #{$medium-mobile} {
+            width: 4px;
+            height: 4px;
+            top: 10px;
+          }
+        }
+      }
+    }
+  }
+  .btn-load-more {
+    text-align: center;
+    padding: 38px 0 0;
+    @media #{$small-only} {
+      padding-top: 24px;
+    }
+    .btn {
+      min-width: 100%;
+      @media #{$small-only} {
+        min-width: 100%;
+        max-width: 300px;
+      }
+    }
+  }
+  .block-schedule-info {
+    background: #fff;
+    padding: 26px 20px 50px 30px;
+    border-top: 1px solid #e6e6e6;
+    @media #{$medium-mobile} {
+      padding: 20px 10px 50px;
+    }
+    @media #{$small-only} {
+      padding: 20px 10px 36px;
+    }
+    .share-bottom {
+      margin-bottom: 28px;
+      @media #{$small-only} {
+        margin-bottom: 18px;
+      }
+      .label {
+        display: inline-block;
+        vertical-align: top;
+        color: #747474;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 40px;
+        margin: 0 0 0;
+        padding: 0 14px 0 0;
+        @media #{$mobile-only-1} {
+          width: 100%;
+          padding: 0 0 10px;
+          line-height: 1.2;
+        }
+      }
+      .likely {
+        display: inline-block;
+        vertical-align: top;
+        .likely__widget {
+          width: 80px;
+          height: 40px;
+          margin: 0 2px 8px;
+          @media #{$mobile-only-1} {
+            width: 72px;
+          }
+          .likely__icon {
+            width: 100%;
+            height: 40px;
+            font-size: 0;
+            text-align: center;
+            svg {
+              display: inline-block;
+              position: relative;
+              left: inherit;
+              top: 10px;
+              width: 20px;
+              height: 20px;
+            }
+          }
+          .likely__button {
+            display: none;
+          }
+          .likely__counter {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .title {
+      color: #010101;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 0 0 17px;
+      @media #{$small-only} {
+        font-size: 20px;
+        margin-bottom: 12px;
+        line-height: 1.4;
+      }
+    }
+    p {
+      color: rgba(#000,0.8);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      margin-bottom: 18px;
+      @media #{$small-only} {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 14px;
+      }
+    }
+  }
+}

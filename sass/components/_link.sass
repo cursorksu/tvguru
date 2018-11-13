@@ -1,0 +1,22 @@
+.c-link
+  text-decoration: none
+  color: #fff
+  font-size: inherit
+  .c-link__anchor
+    display: inline
+    background-image: linear-gradient(rgba(#fff, .5), rgba(#fff, .5))
+    background-size: 1px 1px
+    background-position: 100% 100%
+    background-repeat: repeat-x
+  &--blue
+    color: $blue
+    .c-link__anchor
+      background-image: linear-gradient(rgba($blue, .5), rgba($blue, .5))
+
+  
++MQ(1280px)
+  .c-link
+    &:hover
+      .c-link__anchor
+        background-size: 0 0
+

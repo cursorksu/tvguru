@@ -1,0 +1,131 @@
+.block-front-preview {
+  padding-bottom: 36px;
+  @media #{$medium-mobile} {
+    padding-bottom: 30px;
+  }
+  .block-header {
+    padding: 33px 0 15px;
+    position: relative;
+    @media #{$small-only} {
+      padding: 30px 0 22px;
+    }
+    .block-title {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 0;
+      font-size: 33px;
+      @media #{$medium-mobile} {
+        font-size: 26px;
+      }
+      @media #{$small-only} {
+        font-size: 24px;
+      }
+    }
+    .view-all {
+      display: block;
+      vertical-align: middle;
+      float: right;
+      margin: 7px 40px 0 0;
+      @media #{$medium-only} {
+        margin: 3px 44px 0 0;
+      }
+      @media #{$small-only} {
+        margin: 2px 0 0 0;
+      }
+      a {
+        position: relative;
+        padding: 0 0 0 46px;
+        color: #0083da;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-decoration: none;
+        &:hover {
+          .text {
+            border-bottom-color: rgba($blue,0.5);
+          }
+        }
+        .icon-preview {
+          display: block;
+          position: absolute;
+          @include center(y);
+          left: 0;
+          font-size: 35px;
+          margin-top: -3px;
+          @media #{$medium-only} {
+            margin-top: -3px;
+          }
+          @media #{$small-only} {
+            margin-top: -1px;
+          }
+        }
+        .text {
+          border-bottom: 1px solid transparent;
+        }
+      }
+    }
+    #preview-slider-arrows {
+      @media #{$small-only} {
+        display: none;
+      }
+      .slick-arrow {
+        width: 30px;
+        height: 30px;
+        transform: translateY(0);
+        > span {
+          font-size: 10px;
+        }
+        &.slick-prev {
+          right: -20px;
+          top: 0;
+          left: inherit;
+          @media #{$medium-mobile} {
+            right: -10px;
+          }
+          span {
+            text-indent: -1px;
+          }
+        }
+        &.slick-next {
+          right: -20px;
+          top: 32px;
+          @media #{$medium-mobile} {
+            right: -10px;
+          }
+        }
+      }
+    }
+  }
+  .preview-slider {
+    margin: 0 -10px;
+    @media #{$small-only} {
+      //padding: 0 10px;
+    }
+    &:not(.slick-initialized) {
+      overflow: hidden;
+      white-space: nowrap;
+      .item {
+        display: inline-block;
+        vertical-align: top;
+        width: 33.3333%;
+        white-space: normal;
+        padding: 0 10px 20px;
+        @media #{$small-only} {
+          padding: 0 10px 0;
+        }
+      }
+    }
+    .item {
+      padding: 0 10px 20px;
+      @media #{$small-only} {
+        padding: 0 10px 0;
+      }
+      .item-article-cart {
+        @media #{$small-only} {
+          width: 100%;
+          max-width: 260px;
+        }
+      }
+    }
+  }
+}

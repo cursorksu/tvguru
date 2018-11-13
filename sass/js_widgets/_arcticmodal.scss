@@ -1,0 +1,229 @@
+.arcticmodal-overlay,
+.arcticmodal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+.arcticmodal-overlay {
+  background: rgba(0,0,0,0.5)!important;
+  opacity: 1!important;
+}
+
+.arcticmodal-container {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
+}
+
+*:first-child+html .arcticmodal-container {
+  height: 100%
+}
+
+.arcticmodal-container_i {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.arcticmodal-container_i2 {
+  padding: 24px;
+  margin: 0;
+  border: 0;
+  vertical-align: middle;
+  @media only screen and (max-width: 767px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.arcticmodal-error {
+  padding: 20px;
+  border-radius: 0;
+  background: #000;
+  color: #fff;
+}
+
+.arcticmodal-loading {
+  width: 80px;
+  height: 80px;
+  border-radius: 0;
+  //background: #000 url('../img/loading.gif') no-repeat 50% 50%;
+}
+.box-modal {
+  position: relative;
+  max-width: 660px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 120px;
+  padding: 50px 80px;
+  background: #fff;
+  color: #3c3c3c;
+  /*
+      box-shadow: 0 0 0 6px rgba(153, 153, 153, .3);
+  */
+  border-radius: 0;
+  @media only screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.light-modal {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  box-shadow: 0 0 0 6px rgba(153, 153, 153, .3);
+  border-radius: 0;
+  opacity: 0;
+}
+#big-modal {
+  width: 655px;
+}
+#middle-modal {
+  width: 455px;
+}
+#small-modal {
+  width: 255px;
+}
+#feedback-modal-box {
+
+}
+#feedback-modal-box #feedback-infolist {
+  list-style: none;
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+#feedback-modal-box #feedback-infolist li {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  height: 120px;
+  color: #333;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+#light-box {
+  border-radius: 5px;
+}
+.modal-close {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  text-align: center;
+  line-height: 33px;
+  color: #151416;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 0;
+  font-size: 45px;
+  font-weight: 300;
+  &:hover {
+    color: red;
+  }
+}
+
+.modal-content-box {
+  h4 {
+    padding: 0;
+    color: #f90;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    margin: 0 0 29px;
+    @media only screen and (max-width: 767px) {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    span {
+      display: inline-block;
+      width: 100%;
+      margin-top: 0;
+      color: #5d5d5d;
+      font-size: 21px;
+      @media only screen and (max-width: 767px) {
+        font-size: 17px;
+        margin-top: 10px;
+      }
+    }
+  }
+  form {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+  }
+  .description {
+    text-align: center;
+    p {
+      color: #333;
+      font-size: 21px;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+  }
+}
+
+#small-why {
+  padding: 50px;
+  @media only screen and (max-width: 767px) {
+    padding: 50px 20px;
+  }
+  .node-why {
+    h4 {
+      font-size: 26px;
+      line-height: 1.2;
+      @media only screen and (max-width: 767px) {
+        font-size: 22px;
+      }
+    }
+    ul.list {
+      margin: 0 -20px;
+      li {
+        display: block;
+        float: left;
+        width: 50%;
+        padding: 0 20px 25px;
+        text-align: center;
+        @media only screen and (max-width: 767px) {
+          width: 100%;
+        }
+        .img {
+          text-align: center;
+          margin-bottom: 10px;
+          img {
+            max-width: 50px;
+          }
+        }
+        p {
+          font-size: 16px;
+          line-height: 1.4;
+          @media only screen and (max-width: 767px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .node-footer {
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      padding-top: 20px;
+      a {
+        height: 40px;
+        span {
+          font-size: 2.1rem;
+        }
+      }
+    }
+  }
+}

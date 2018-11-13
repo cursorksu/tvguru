@@ -1,0 +1,70 @@
+.c-suggest
+  margin-top: 15px
+  .c-suggest__label
+    margin-bottom: 8px
+  .c-suggest__inner
+    position: relative
+    height: inherit
+    display: block
+    margin-left: -10px
+    margin-right: -10px
+    box-shadow: 0 0 35px rgba(142, 158, 232, 0.24)
+    
+  .c-suggest__text
+    position: absolute
+    left: 0
+    right: 0
+    text-align: center
+    font-size: 15px
+    font-weight: 700
+    color: #fff
+    padding-top: 8px
+    padding-bottom: 6px
+    background-image: linear-gradient(to right, rgba(#0083da, .4) 0%, rgba(#0083da, .8) 32%, rgba(#0083da, .8) 68%, rgba(#0083da, .4) 100%)
+    
+  .c-suggest__top
+    top: 0
+  .c-suggest__bottom
+    bottom: 0
+
+  .c-suggest__img
+ 
+    img
+      object-fit: cover
+      width: 100%
+      height: 100%
+
++MQ(1026px)
+  .c-suggest
+    margin-top: 39px
+    .c-suggest__label
+      margin-bottom: 11px
+    .c-suggest__inner
+      margin-right: 0
+      margin-left: 0
+    .c-suggest__text
+      font-size: 30px
+      padding-top: 13px
+      padding-bottom: 11px
+      background-image: linear-gradient(to right, transparent 0%, rgba(#0083da, .8) 32%, rgba(#0083da, .8) 68%, transparent 100%)
+
++MQ(1280px)
+  .c-suggest
+    margin-top: 47px
+    .c-suggest__inner
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        box-shadow: 0 0 24px rgba(3, 10, 47, 0.27)
+        opacity: 0
+        transition: opacity .5s
+      &:hover
+        // box-shadow: none
+        &:after
+          transition: opacity 0s
+          opacity: 1

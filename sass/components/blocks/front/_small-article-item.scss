@@ -1,0 +1,85 @@
+.small-article-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 105px;
+  padding: 0 0 0 120px;
+  background: #fff;
+  text-decoration: none;
+  transition: all 0.1s ease 0s;
+  &:hover {
+    box-shadow: 0 0 20px rgba(2, 2, 2, 0.2);
+    .field-title {
+      span {
+        color: $blue;
+        border-bottom-color: rgba($blue,0.5);
+      }
+    }
+  }
+  .field-img {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 105px;
+    img {
+      width: 100%;
+    }
+  }
+  .body {
+    padding: 14px 16px 28px 0;
+    height: 100%;
+    position: relative;
+  }
+  .field-title {
+    overflow: hidden;
+    max-height: 56px;
+    line-height: 1.3;
+    span {
+      display: inline;
+      color: black;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      text-decoration: none;
+      transition: all 0.1s ease 0s;
+      border-bottom: 1px solid transparent;
+      //@media #{$large-mobile} {
+      //  font-size: 13px;
+      //  line-height: 14px;
+      //}
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+  .btn-detail {
+    display: block;
+    position: absolute;
+    right: 15px;
+    bottom: 3px;
+    span {
+      position: relative;
+      display: inline-block;
+      padding: 0 14px 0 0;
+      color: rgba(#000,0.5);
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1;
+      text-decoration: none;
+      transition: all 0.1s ease 0s;
+      &:hover {
+        color: $blue;
+      }
+      &:after {
+        content: $icon-arrow-light-right;
+        @extend .icomoon;
+        display: block;
+        position: absolute;
+        @include center(y);
+        right: 0;
+        font-size: 8px;
+      }
+    }
+  }
+}

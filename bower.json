@@ -1,0 +1,34 @@
+{
+  "name": "tvguru",
+  "description": "site",
+  "main": "gulpfile.js",
+  "version": "0.0.0",
+  "authors": [
+    "Alexander Kharchuk <sashko.harchuk@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "bootstrap": "^3.3.6",
+    "slick-carousel": "^1.6.0",
+    "jQuery.mmenu": "https://github.com/FrDH/jQuery.mmenu.git#^5.7.8",
+    "jStarbox": "https://github.com/sabberworm/jStarbox.git",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "circliful": "https://github.com/pguso/jquery-plugin-circliful.git#^1.0.4",
+    "fancyBox": "https://github.com/fancyapps/fancyBox.git#^2.1.5",
+    "jquery-mousewheel": "https://github.com/jquery/jquery-mousewheel.git#^3.1.13",
+    "sticky-kit": "^1.1.2",
+    "lightgallery": "^1.5.0",
+    "Likely": "ilyabirman-likely#^2.2.3",
+    "stacktable.js": "https://github.com/johnpolacek/stacktable.js.git#^1.0.2",
+    "LineProgressbar": "https://github.com/kingRayhan/LineProgressbar.git#^1.0.0"
+  }
+}

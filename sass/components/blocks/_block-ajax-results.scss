@@ -1,0 +1,126 @@
+.block-ajax-results {
+  position: relative;
+  padding: 0 0 64px;
+  height: calc(100vh - 64px);
+  @media #{$medium-mobile} {
+    height: calc(100vh - 52px);
+  }
+  @media #{$small-only} {
+    padding-bottom: 40px;
+  }
+  .cuScroll {
+    max-height: 100%;
+    overflow: hidden;
+    .mCSB_container {
+      margin-right: 0;
+    }
+    .mCSB_scrollTools {
+      top: 22px;
+      right: 40px;
+      bottom: 16px;
+      @media #{$medium-mobile} {
+        right: 14px;
+      }
+      @media #{$small-only} {
+        right: 6px;
+      }
+    }
+    .mCSB_scrollTools .mCSB_draggerRail {
+      width: 6px;
+      border: none;
+      background: #d8d7d7;
+      border-radius: 0;
+    }
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+      width: 6px;
+      background: #a8a7a7;
+      border-radius: 0;
+    }
+  }
+  .search-dark-list {
+    background: #fff;
+    padding: 25px 84px 26px 40px;
+    @media #{$medium-mobile} {
+      padding: 20px 45px 30px 14px;
+    }
+    @media #{$small-only} {
+      padding: 15px 28px 20px 10px;
+    }
+    .item-search-serial {
+      border-bottom: 1px solid rgba(#fff,0.1);
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+  .ajax-news {
+    padding: 23px 84px 0 40px;
+    border-top: 1px solid #e7e7e7;
+    @media #{$medium-mobile} {
+      padding: 20px 45px 0 14px;
+    }
+    @media #{$small-only} {
+      padding: 15px 28px 0 10px;
+    }
+    .articles-list {
+      margin: 0 -10px;
+      li {
+        padding: 0 10px 20px;
+        @media #{$small-only} {
+          padding-bottom: 20px;
+        }
+        @media #{$mobile-only-2} {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .view-all {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    a {
+      height: 64px;
+      display: block;
+      width: 100%;
+      background: #0083da;
+      @extend %vertical;
+      @media #{$small-only} {
+        height: 40px;
+      }
+      &:hover {
+        background: rgba(#0083da,0.8);
+      }
+      .help {
+        display: inline-block;
+        vertical-align: middle;
+        color: #fffefe;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        padding: 3px 28px 0 0;
+        position: relative;
+        @media #{$small-only} {
+          font-size: 16px;
+          padding-top: 1px;
+        }
+        [class*=" icon-"], [class^=icon-] {
+          display: block;
+          position: absolute;
+          @include center(y);
+          right: 0;
+          font-size: 14px;
+          margin-top: -1px;
+        }
+
+      }
+    }
+  }
+}

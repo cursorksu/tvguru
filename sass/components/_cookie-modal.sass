@@ -1,0 +1,75 @@
+.c-modal
+  z-index: 51
+  background-color: $color-primary-blue
+  position: fixed
+  bottom: 0
+  right: 0
+  left: 0
+  overflow-x: hidden
+  display: none
+  &.is-open
+    display: block
+  .c-modal__inner
+    position: relative
+    padding-bottom: 12px
+    padding-top: 12px
+  .c-modal__content
+    font-size: 16px
+    font-weight: 400
+    color: #b9ddfe
+    line-height: 1.38
+    padding-right: 15px
+    border-right: 1px solid rgba(#fff, .1)
+    padding-top: 8px
+    padding-bottom: 8px
+    padding-left: 10px
+  .c-modal__close
+    margin-left: auto
+    margin-right: auto
+    padding-left: 0
+    padding-right: 0
+    width: 100%
+    &:before,
+    &:after
+      height: 2px 
+  .c-modal__row
+    font-size: 0
+  .c-modal__col
+    display: inline-block
+    vertical-align: middle
+  .c-modal__text
+    width: 83%
+  .c-modal__action
+    width: 17%
+
++MQ(1280px)
+  .c-modal
+    .c-modal__close
+      width: 46px
+      margin-right: 20px
+    .c-modal__inner
+      padding-top: 27px
+      padding-bottom: 26px
+      padding-left: 30px
+      padding-right: 30px
+    .c-modal__content
+      font-size: 22px
+      line-height: 1.45
+      padding-left: 10px
+      border-right: 0
+      padding-right: 0
+    .c-modal__text
+      width: 90%
+    .c-modal__action
+      width: 10%
+
++MQ(1440px)
+  .c-modal
+    .c-modal__inner
+      max-width: 81.850rem
+      margin-left: auto
+      margin-right: auto
+    .c-modal__content
+      padding-left: 100px
+      max-width: 993px
+      

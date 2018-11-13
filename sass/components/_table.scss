@@ -1,0 +1,50 @@
+table {
+  width: 100%;
+  border: none;
+  background: transparent;
+  margin: 0 0 15px;
+  thead {
+    background: transparent;
+    tr {
+      border-bottom: 3px solid $green;
+      th {
+        color: #141414;
+        font-weight: 300;
+        font-size: 12px;
+        text-align: center;
+        line-height: 1.1;
+        padding: 15px 10px;
+        background: transparent;
+        border-bottom: none;
+        vertical-align: top;
+      }
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid $green;
+      &.alt, &.even, &:nth-of-type(even) {
+        background: transparent;
+      }
+      td {
+        color: #141414;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.1;
+        padding: 15px 10px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.scroll-table {
+  @media #{$medium-mobile} {
+    width: 100%;
+    overflow-x: scroll;
+    table {
+      width: 740px;
+      margin-bottom: 15px;
+    }
+  }
+}
