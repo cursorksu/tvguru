@@ -68,59 +68,65 @@
     white-space: nowrap;
     margin-top: 30px;
 }
-.article-info-links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
+
 .page-redactor .redactor-info .box-center .field, .cabinet-header .box-center .field {
-    padding: 0;
-    margin: 0;
-    flex-basis: 33%;
-    width: 33%;
     position: relative;
-    height: 41px;
+    display: inline-block;
+    padding-top: 5px;
 }
-.page-redactor .redactor-info .box-center a, .cabinet-header .box-center a {
+
+.page-redactor .redactor-info .box-center .field:nth-child(1), .cabinet-header .box-center .field:nth-child(1) {
+    position: relative;
+    border-right: 2px solid #dfdfdf;
+    width: 70px;
+    height: 28px;
+}
+
+.page-redactor .redactor-info .box-center .field:nth-child(2), .cabinet-header .box-center .field:nth-child(2) {
+    position: relative;
+    width: 70px;
+    height: 28px;
+}
+
+.page-redactor .redactor-info .box-center .field:nth-child(3), .cabinet-header .box-center .field:nth-child(3) {
+    position: relative;
+    border-left: 2px solid #dfdfdf;
+    width: 70px;
+    height: 28px;
+}
+
+.page-redactor .redactor-info .box-center .field-vk, .cabinet-header .box-center .field-vk {
     color: rgba(1, 1, 1, .5);
-    display: block;
-    width: 100%;
-    height: 100%;
+    margin-right: 28px;
+    margin-top: 7px;
+    padding-left: 24px;
+    width: 45px;
     text-decoration: none;
-    border: 1px solid #dfdfdf;
-    border-collapse: collapse;
 }
-.page-redactor .redactor-info .box-center a:before, .cabinet-header .box-center a:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 12px;
-}
-.page-redactor .redactor-info .box-center .field-vk:hover, .cabinet-header .box-center .field-vk:hover {
-    background: #45668e;
-    border-color: #45668e;
-}
-.page-redactor .redactor-info .box-center .field-fb:hover, .cabinet-header .box-center .field-fb:hover {
-    background: #365396;
-    border-color: #365396;
-}
-.page-redactor .redactor-info .box-center .field-mail:hover, .cabinet-header .box-center .field-mail:hover {
-    background: #0083da;
-    border-color:#0083da;
-}
-.page-redactor .redactor-info .box-center .field-fb:before, .cabinet-header .box-center .field-fb:before {
+
+.page-redactor .redactor-info .box-center .field-fb, .cabinet-header .box-center .field-fb {
+    color: rgba(1, 1, 1, .5);
+    margin-right: 22px;
+    padding-left: 24px;
+    width: 33px;
     font-size: 16px;
+    text-decoration: none;
 }
 
 .page-redactor .redactor-info .box-center .field-mail, .cabinet-header .box-center .field-mail {
-
+    color: rgba(1, 1, 1, .5);
+    margin-right: 22px;
+    margin-top: 6px;
+    padding-left: 29px;
+    width: 46px;
+    text-decoration: none;
 }
 
 .page-redactor .article-info-links .field > a:hover:before, .cabinet-header .article-info-links .field > a:hover:before {
-    color: #fff;
+    color: #0083da;
 }
-
 .page-redactor .redactor-info img {
     border-radius: 50%;
     width: 55%;
