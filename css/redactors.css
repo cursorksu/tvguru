@@ -124,9 +124,18 @@
     text-decoration: none;
 }
 
-.page-redactor .article-info-links .field > a:hover:before, .cabinet-header .article-info-links .field > a:hover:before {
+.page-redactor .article-info-links .field > .field-mail:hover::before {
     color: #0083da;
 }
+
+.page-redactor .article-info-links .field > .field-fb:hover::before  {
+    color: #365396;
+}
+
+.page-redactor .article-info-links .field > .field-vk:hover::before  {
+    color: #45668e;
+}
+
 .page-redactor .redactor-info img {
     border-radius: 50%;
     width: 55%;
