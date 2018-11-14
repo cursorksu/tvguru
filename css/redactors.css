@@ -124,14 +124,17 @@
     text-decoration: none;
 }
 
+.page-cabinet .article-info-links .field > .field-mail:hover::before,
 .page-redactor .article-info-links .field > .field-mail:hover::before {
     color: #0083da;
 }
 
+.page-cabinet  .article-info-links .field > .field-fb:hover::before,
 .page-redactor .article-info-links .field > .field-fb:hover::before  {
     color: #365396;
 }
 
+.page-cabinet  .article-info-links .field > .field-vk:hover::before,
 .page-redactor .article-info-links .field > .field-vk:hover::before  {
     color: #45668e;
 }
@@ -351,6 +354,7 @@
     visibility: visible;
 }
 
+.page-cabinet .user-desc .more,
 .page-redactor .serial-info .more{
     font-size: 13px;
     color: #afafaf;
@@ -358,19 +362,25 @@
     width: 85px;
 }
 
+.page-cabinet .serial-description ,
+.page-redactor  .serial-description {
+    margin-bottom: 10px;
+}
+.page-cabinet .serial-description p,
 .page-redactor .serial-description p{
     color: rgba(0,0,0,.8);
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
-    margin-bottom: 25px;
     overflow: hidden;
 }
 
+.page-cabinet .more,
 .page-redactor .more{
     position: relative;
     padding-right: 15px;
 }
+.page-cabinet .more:before,
 .page-redactor .more:before{
     font-family: 'icomoon' !important;
     speak: none;
@@ -388,6 +398,7 @@
     -o-transform: translateY(-50%) rotate(-90deg);
     transform: translateY(-50%) rotate(-90deg);
 }
+.page-cabinet .more.active:before,
 .page-redactor .more.active:before{
     -webkit-transform: translateY(-50%) rotate(90deg);
     -moz-transform: translateY(-50%) rotate(90deg);
@@ -395,3 +406,4 @@
     -o-transform: translateY(-50%) rotate(90deg);
     transform: translateY(-50%) rotate(90deg);
 }
+

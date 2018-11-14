@@ -345,7 +345,7 @@
                                         </div>
                                     </div>
                                     <div class="user-desc">
-                                        <div class="serial-description collapse" id="collapseUserDescription" style = "min-height: 112px;">
+                                        <div class="serial-description collapse" id="collapseUserDescription" style = "min-height: 116px;">
                                             <div class="well">
                                                 <p>Американский сериал, созданый по мотивам
                                                     цикла романов писателя Джорджа Мартина. Действие картины
@@ -395,7 +395,7 @@
                                                         </h2>
                                                         <div class="field-original-title">главный редактор</div>
 
-                                                        <div class="serial-description collapse" id="collapseDescription" style = "min-height: 112px;">
+                                                        <div class="serial-description collapse" id="collapseDescription" style = "min-height: 116px;">
                                                             <div class="well">
                                                                 <p>Американский сериал, созданый по мотивам
                                                                     цикла романов писателя Джорджа Мартина. Действие картины
@@ -709,13 +709,42 @@
 <script type="text/javascript" src="js/bundle.js"></script>
 
 <script>
+    $(window).resize(function(){
+        var wellHeight = $('.serial-info .well').height();
+        var btnMore = $('.serial-info .more');
+
+        var wellUserHeight = $('.user-desc .well').height();
+        var btnUserMore = $('.user-desc .more');
+
+        if(wellHeight < 116){
+            btnMore.hide();
+        }else {
+            btnMore.show();
+        }
+        if(wellUserHeight < 116){
+            btnUserMore.hide();
+        }else {
+            btnUserMore.show();
+        }
+    });
     $(document).ready(function () {
 
         var wellHeight = $('.serial-info .well').height();
         var btnMore = $('.serial-info .more');
 
-        if(wellHeight < 112){
+        var wellUserHeight = $('.user-desc .well').height();
+        var btnUserMore = $('.user-desc .more');
+
+
+        if(wellHeight < 116){
             btnMore.hide();
+        }else {
+            btnMore.show();
+        }
+        if(wellUserHeight < 116){
+            btnUserMore.hide();
+        }else {
+            btnUserMore.show();
         }
 
         // var descWrap = $('.page-redactor .serial-info .wrap');
